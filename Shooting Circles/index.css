@@ -1,0 +1,61 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+canvas{
+    padding: 0;
+    margin: 0;
+}
+.score{
+    position: absolute;
+    font-size: 40px;
+    width: 300px;
+    z-index: 0;
+    color: white;
+}
+.score i{
+    text-decoration: none;
+}
+.popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .5s ease;
+    background-color: rgba(255, 255, 255, 0.016);
+}
+.content {
+    background: #fff;
+    padding: 20px;
+    font: bold 30px 'sans-serif';
+    border-radius: 5%;
+    width: 300px;
+    /* height: ; */
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.restart{
+    transition: all 0.4s ease;
+    padding: 10px;
+    margin-top: 0px;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: white;
+}
+.restart:hover{
+    background-color: black;
+    color: white;
+}
+.restart:active{
+    background-color: white;
+    color: black;
+}
